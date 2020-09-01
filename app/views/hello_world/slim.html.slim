@@ -1,0 +1,7 @@
+h1 Hello, slim!
+
+div { data-reflex-permanent }
+  = react_component("HelloWorld", { greeting: "Hello from react-rails." })
+
+a data-count="#{@count.to_i}" data-reflex="click->CounterReflex#increment" data-step="1" href="#"
+  | Increment #{@count.to_i}
